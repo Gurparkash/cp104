@@ -357,3 +357,24 @@ def scalar_multiply(matrix, num):
     return
 
 
+def matrix_transpose(a):
+    """
+    -------------------------------------------------------
+    Transpose the contents of matrix a.
+    Use: b = matrix_transpose(a):
+    -------------------------------------------------------
+    Parameters:
+        a - a 2D list (2D list of ?)
+    Returns:
+        b - the transposed matrix (2D list of ?)
+    ------------------------------------------------------
+    """
+    b = []
+    for i in range(len(a[0])):
+        temp_list = []
+        for j in range(len(a)):
+            temp_list.append(a[j][i])
+        b.append(temp_list)
+    return b
+
+
