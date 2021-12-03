@@ -1,0 +1,39 @@
+"""
+------------------------------------------------------------------------
+CP104 Assignment 09, Testing
+------------------------------------------------------------------------
+Author: Your Full Name
+ID:     190401010
+Email:  name1010@mylaurier.ca
+__updated__ = "2021-12-03"
+------------------------------------------------------------------------
+"""
+t01
+"""
+------------------------------------------------------------------------
+CP104 Assignment 09, Functions
+------------------------------------------------------------------------
+
+t02
+Numbers: [10, 20, 30]
+
+t03
+Number of uppercase letters: 50
+Number of lowercase letters: 114
+Number of digits in the file: 15
+Number of whitespace characters in the file: 60
+
+t04
+Original Matrix: [[1, 2, 9], [8, 7, 12], [4, 2, 0]]
+Flattened Matrix: [1, 2, 9, 8, 7, 12, 4, 2, 0]
+
+t05
+Original Matrix: [[1, 2, 9, 8], [7, 12, 4, 2]]
+Rotated Matrix: [[7, 1], [12, 2], [4, 9], [2, 8]]
+
+t06
+['David Brown', 'King St', 'Waterloo, ON', 'Q1Q 1Q1']
+['Angele Foley', 'Weber St', 'Waterloo, ON', 'F0Q 8I7']
+['Tasmin Brown', 'Awesome Avenue', 'Waterloo, ON', 'U1F 5D4']
+['Duran Duran', 'Rock Ave', 'Kitchener, ON', 'R0K 0N3']
+['Jane Doe', 'Upscale Boulevard', 'Waterloo, ON', 'A1A 1A1']

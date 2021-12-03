@@ -1,18 +1,19 @@
 """
 ------------------------------------------------------------------------
-CP104 Lab 11, Task 05
+CP104 Assignment 09, Task 05
 ------------------------------------------------------------------------
 Author: Your Full Name
 ID:     190401010
 Email:  name1010@mylaurier.ca
-__updated__ = "2021-12-02"
+__updated__ = "2021-12-03"
 ------------------------------------------------------------------------
 """
-from functions import words_to_matrix
+from functions import matrix_rotate_right
 
-word_list = ['cat', 'dog', 'big']
+matrix = [[1, 2, 9], [8, 7, 12], [4, 2, 0]]
 
-matrix = words_to_matrix(word_list)
+print(f'Original Matrix: {matrix}')
 
-print(word_list)
-print(matrix)
+rotated = matrix_rotate_right(matrix)
+
+print(f'Rotated Matrix: {rotated}')

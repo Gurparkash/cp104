@@ -1,18 +1,19 @@
 """
 ------------------------------------------------------------------------
-CP104 Lab 11, Task 05
+CP104 Assignment 09, Task 04
 ------------------------------------------------------------------------
 Author: Your Full Name
 ID:     190401010
 Email:  name1010@mylaurier.ca
-__updated__ = "2021-12-02"
+__updated__ = "2021-12-03"
 ------------------------------------------------------------------------
 """
-from functions import words_to_matrix
+from functions import flatten
 
-word_list = ['cat', 'dog', 'big']
+matrix = [[1, 2, 9], [8, 7, 12], [4, 2, 0]]
 
-matrix = words_to_matrix(word_list)
+print(f'Original Matrix: {matrix}')
 
-print(word_list)
-print(matrix)
+flat = flatten(matrix)
+
+print(f'Flattened Matrix: {flat}')

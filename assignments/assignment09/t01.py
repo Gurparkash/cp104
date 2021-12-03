@@ -1,18 +1,20 @@
 """
 ------------------------------------------------------------------------
-CP104 Lab 11, Task 05
+CP104 Assignment 09, Task 01
 ------------------------------------------------------------------------
 Author: Your Full Name
 ID:     190401010
 Email:  name1010@mylaurier.ca
-__updated__ = "2021-12-02"
+__updated__ = "2021-12-03"
 ------------------------------------------------------------------------
 """
-from functions import words_to_matrix
+from functions import file_head
 
-word_list = ['cat', 'dog', 'big']
+file = input('Enter a filename: ')
+line_count = int(input('Enter a number: '))
 
-matrix = words_to_matrix(word_list)
+file = open(file, 'r', encoding='utf-8')
 
-print(word_list)
-print(matrix)
+file_head(file, line_count)
+
+file.close()
