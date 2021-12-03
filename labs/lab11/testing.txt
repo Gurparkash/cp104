@@ -1,0 +1,83 @@
+"""
+------------------------------------------------------------------------
+CP104 Lab 11, Testing
+------------------------------------------------------------------------
+Author: Your Full Name
+ID:     190400000
+Email:  yourlaurieremail@mylaurier.ca
+__updated__ = "2021-12-02"
+------------------------------------------------------------------------
+"""
+t01
+Enter the number of rows: 2
+Enter the number of cols: 3
+Enter the minimum value: 100
+Enter the maximum value: 10000
+Enter the type of values: int
+Randomly generated matrix: [[6954, 345, 3697], [9279, 9892, 9094]]
+
+t02
+Enter the number of rows: 2
+Enter the number of cols: 3
+Randomly generated matrix: [['a', 'y', 'j'], ['k', 's', 'l']]
+
+t03
+[[6954, 345, 3697], [9279, 9892, 9094]]
+          0      1      2
+   0   6954    345   3697
+   1   9279   9892   9094
+
+t04
+[['a', 'y', 'j'], ['k', 's', 'l']]
+          0      1      2
+   0      a      y      j
+   1      k      s      l
+
+t05
+['cat', 'dog', 'big']
+[['c', 'a', 't'], ['d', 'o', 'g'], ['b', 'i', 'g']]
+
+t06
+Matrix: [[6954, 345, 3697], [9279, 9892, 9094]]
+Smallest Values: 345
+Largest Values: 9892
+Total: 39261
+average: 6543.5
+
+t07
+Matrix: [[6954, 345, 3697], [9279, 9892, 9094]]
+Location of Smallest Value: [0, 1]
+Location of Largest Value: [1, 1]
+
+t08
+Matrix: [[6954, 345, 3697], [9279, 9892, 9094]]
+Location of the first value smaller than 1000: [0, 1]
+
+t09
+Matrix: [['a', 'y', 'j'], ['k', 's', 'l']]
+y appears 1 time(s)
+
+t10
+Matrix: [['c', 'a', 't'], ['c', 'a', 't'], ['d', 'o', 'g']]
+The location(s) of cat: [0, 1]
+
+t11
+Matrix: [['c', 'c', 'd'], ['a', 'a', 'o'], ['t', 't', 'g']]
+The location(s) of cat: [0, 1]
+
+t12
+Matrix: [['c', 'c', 'd'], ['a', 'a', 't'], ['t', 't', 't']]
+cat was on the diagonal
+
+t13
+Matrix (without scalar multiplication: [[6954, 345, 3697], [9279, 9892, 9094]] 
+Matrix (with scalar multiplication: [[13908, 690, 7394], [18558, 19784, 18188]]
+
+t14
+Matrix 1: [[6954, 345, 3697], [9279, 9892, 9094]] 
+Transposed Matrix: [[6954, 9279], [345, 9892], [3697, 9094]]
+
+t15
+Matrix 1: [[6954, 345, 3697], [9279, 9892, 9094]]
+Matrix 2: [[6954, 345, 3697], [9279, 9892, 9094]]
+Matricies are equal
