@@ -11,6 +11,7 @@ __updated__ = "2021-12-02"
 from random import randint, uniform
 
 
+# For task 1
 def generate_matrix_num(rows, cols, low, high, value_type):
     """
     -------------------------------------------------------
@@ -43,6 +44,7 @@ def generate_matrix_num(rows, cols, low, high, value_type):
     return matrix
 
 
+# For task 2
 def generate_matrix_char(rows, cols):
     """
     -------------------------------------------------------
@@ -66,6 +68,7 @@ def generate_matrix_char(rows, cols):
     return matrix
 
 
+# For task 3
 def print_matrix_num(matrix, value_type):
     """
     -------------------------------------------------------
@@ -97,6 +100,7 @@ def print_matrix_num(matrix, value_type):
     return
 
 
+# For task 4
 def print_matrix_char(matrix):
     """
     -------------------------------------------------------
@@ -122,6 +126,7 @@ def print_matrix_char(matrix):
     return
 
 
+# For task 5
 def words_to_matrix(word_list):
     """
     -------------------------------------------------------
@@ -147,6 +152,7 @@ def words_to_matrix(word_list):
     return matrix
 
 
+# For task 6
 def stats(matrix):
     """
     -------------------------------------------------------
@@ -178,6 +184,7 @@ def stats(matrix):
     return smallest, largest, total, average
 
 
+# For task 7
 def find_position(matrix):
     """
     -------------------------------------------------------
@@ -209,6 +216,7 @@ def find_position(matrix):
     return s_loc, l_loc
 
 
+# For task 8
 def find_less(matrix, n):
     """
     -------------------------------------------------------
@@ -240,6 +248,7 @@ def find_less(matrix, n):
     return loc
 
 
+# For task 9
 def count_frequency(matrix, char):
     """
     -------------------------------------------------------
@@ -263,6 +272,7 @@ def count_frequency(matrix, char):
     return count
 
 
+# For task 10
 def find_word_horizontal(matrix, word):
     """
     -------------------------------------------------------
@@ -288,6 +298,7 @@ def find_word_horizontal(matrix, word):
     return rows
 
 
+# For task 11
 def find_word_vertical(matrix, word):
     """
     -------------------------------------------------------
@@ -313,6 +324,7 @@ def find_word_vertical(matrix, word):
     return cols
 
 
+# For task 12
 def find_word_diagonal(matrix, word):
     """
     -------------------------------------------------------
@@ -337,6 +349,7 @@ def find_word_diagonal(matrix, word):
     return found
 
 
+# For task 13
 def scalar_multiply(matrix, num):
     """
     -------------------------------------------------------
@@ -357,6 +370,7 @@ def scalar_multiply(matrix, num):
     return
 
 
+# For task 14
 def matrix_transpose(a):
     """
     -------------------------------------------------------
@@ -378,3 +392,39 @@ def matrix_transpose(a):
     return b
 
 
+# For task 15
+def matrix_equal(matrix1, matrix2):
+    """
+    -------------------------------------------------------
+    Compares two matrices to see if they are equal - i.e. have the
+    same contents in the same locations.
+    Use: equal = matrix_equal(matrix1, matrix2)
+    -------------------------------------------------------
+    Parameters:
+        matrix1 - the first matrix (2D list of ?)
+        matrix2 - the second matrix (2D list of ?)
+    Returns:
+        equal - True if matrix1 and matrix2 are equal,
+            False otherwise (boolean)
+    ------------------------------------------------------
+    """
+    equal = True
+    i = 0
+    if len(matrix1) == len(matrix2):
+        while i < len(matrix1) and equal:
+            if len(matrix1[i]) != len(matrix2[i]):
+                equal = False
+            else:
+                equal = True
+            i += 1
+        i = 0 
+        while i < len(matrix1) and equal:
+            j = 0
+            while j < len(matrix1[i]):
+                if matrix1[i][j] != matrix2[i][j]:
+                    equal = False
+                j += 1
+            i += 1
+    else:
+        equal = False
+    return equal
