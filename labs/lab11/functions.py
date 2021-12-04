@@ -8,6 +8,7 @@ Email:  name1010@mylaurier.ca
 __updated__ = "2021-12-02"
 ------------------------------------------------------------------------
 """
+# This import statement is required for task 1 and 2
 from random import randint, uniform
 
 
@@ -36,8 +37,10 @@ def generate_matrix_num(rows, cols, low, high, value_type):
         temp_list = []
         for i in range(cols):
             if value_type == 'float':
+                # Import uniform like above
                 temp_list.append(uniform(low, high))
             # This could've been an else statement
+            # Import randint like above
             elif value_type == 'int':
                 temp_list.append(randint(low, high))
         matrix.append(temp_list)
