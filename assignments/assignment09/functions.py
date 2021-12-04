@@ -53,7 +53,7 @@ def file_integers(fh):
         for j in split_values:
             if j.isnumeric():
                 if int(j) > 0:
-                    numbers.append(j.strip())
+                    numbers.append(int(j))
     return numbers
 
 
