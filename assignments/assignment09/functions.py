@@ -49,7 +49,7 @@ def file_integers(fh):
     """
     numbers = []
     for i in fh:
-        split_values = i.split(',')
+        split_values = i.strip().split(',')
         for j in split_values:
             if j.isnumeric():
                 if int(j) > 0:
