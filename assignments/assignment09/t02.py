@@ -16,6 +16,4 @@ numbers = file_integers(fh)
 
 fh.close()
 
-print(type(numbers))
-print(type(numbers[0]))
 print(f'Numbers: {numbers}')
